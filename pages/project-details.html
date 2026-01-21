@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Motion Graphics Studio</title>
+    <meta name="description" content="Detailed view of our motion graphics project.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-surface)] border-b border-[var(--text-secondary)]/20 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span class="text-xl font-bold">MotionStudio</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-1 hover:text-[var(--accent)] transition-smooth">
+                            <span>Home</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-[var(--bg-card)] border border-[var(--text-secondary)]/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="index.html" class="block px-4 py-2 hover:bg-[var(--bg-surface)]">Home 1 - Creative</a>
+                            <a href="home-saas.html" class="block px-4 py-2 hover:bg-[var(--bg-surface)]">Home 2 - SaaS</a>
+                        </div>
+                    </div>
+                    <a href="work.html" class="hover:text-[var(--accent)] transition-smooth">Work</a>
+                    <a href="services.html" class="hover:text-[var(--accent)] transition-smooth">Services</a>
+                    <a href="clients.html" class="hover:text-[var(--accent)] transition-smooth">Clients</a>
+                    <a href="about.html" class="hover:text-[var(--accent)] transition-smooth">About</a>
+                    <a href="contact.html" class="hover:text-[var(--accent)] transition-smooth">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-[var(--bg-card)] transition-smooth" aria-label="Toggle theme">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </button>
+                    <a href="login.html" class="btn-hover px-4 py-2 border border-[var(--accent)] text-[var(--accent)] rounded-lg font-medium hover:bg-[var(--accent)] hover:text-white transition-smooth">Login</a>
+                    <a href="register.html" class="btn-hover px-4 py-2 bg-[var(--accent)] text-white rounded-lg font-medium">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <a href="work.html" class="text-[var(--accent)] hover:underline mb-4 inline-block">← Back to Portfolio</a>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Tech Startup Logo Animation</h1>
+            <p class="text-xl text-[var(--text-secondary)] mb-8">
+                A dynamic logo reveal animation for an innovative technology company, designed to capture attention and establish brand identity in the competitive tech market.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <span class="px-4 py-2 bg-[var(--bg-surface)] rounded-lg text-sm">Brand Identity</span>
+                <span class="px-4 py-2 bg-[var(--bg-surface)] rounded-lg text-sm">2D Animation</span>
+                <span class="px-4 py-2 bg-[var(--bg-surface)] rounded-lg text-sm">Logo Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Image -->
+    <section class="px-4 sm:px-6 lg:px-8 mb-16 fade-in">
+        <div class="max-w-7xl mx-auto">
+            <img src="https://picsum.photos/1200/600?random=50" alt="Project Main" width="1200" height="600" loading="lazy" class="w-full h-auto rounded-lg">
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="section-padding px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Project Overview</h2>
+                    <p class="text-[var(--text-secondary)] mb-4">
+                        This project involved creating a comprehensive logo animation package for a fast-growing technology startup. The client needed a memorable brand reveal that would work across multiple platforms including web, mobile apps, and video presentations.
+                    </p>
+                    <p class="text-[var(--text-secondary)]">
+                        The animation needed to convey innovation, professionalism, and forward-thinking while maintaining simplicity and clarity. We developed multiple variations to suit different contexts and durations.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Key Challenges</h2>
+                    <ul class="space-y-3 text-[var(--text-secondary)]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-[var(--accent)] mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Creating a versatile animation that works in both short (3s) and extended (10s) formats
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-[var(--accent)] mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Maintaining brand consistency across multiple output formats and resolutions
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-[var(--accent)] mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Balancing technical sophistication with accessibility and load times
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h2 class="text-2xl font-semibold mb-6">Process & Approach</h2>
+                <p class="text-[var(--text-secondary)] mb-6">
+                    We began with extensive research into the client's brand values, target audience, and competitive landscape. This informed our initial concept development phase, where we explored multiple animation styles and timing approaches.
+                </p>
+                <p class="text-[var(--text-secondary)] mb-6">
+                    The design phase involved creating detailed storyboards and animatics to visualize the motion before full production. We worked closely with the client to refine the concept, ensuring every frame aligned with their brand vision.
+                </p>
+                <p class="text-[var(--text-secondary)]">
+                    Production involved meticulous attention to timing, easing, and visual hierarchy. We delivered multiple versions optimized for different use cases, including web-ready formats, high-resolution versions for presentations, and mobile-optimized files.
+                </p>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-semibold mb-6">Project Gallery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <img src="https://picsum.photos/600/400?random=51" alt="Gallery 1" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                    <img src="https://picsum.photos/600/400?random=52" alt="Gallery 2" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                    <img src="https://picsum.photos/600/400?random=53" alt="Gallery 3" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                    <img src="https://picsum.photos/600/400?random=54" alt="Gallery 4" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="bg-[var(--bg-surface)] p-8 rounded-lg border border-[var(--text-secondary)]/10">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                </div>
+                <p class="text-[var(--text-secondary)] mb-6 italic text-lg">
+                    "MotionStudio delivered exactly what we needed. The logo animation perfectly captures our brand's energy and has become a signature element of our visual identity. The team was professional, responsive, and truly understood our vision."
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-[var(--accent)]/20 flex items-center justify-center mr-4">
+                        <span class="text-[var(--accent)] font-semibold">MR</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold">Michael Roberts</div>
+                        <div class="text-sm text-[var(--text-secondary)]">Founder & CEO, TechVenture</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--bg-surface)] border-t border-[var(--text-secondary)]/20 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-xl font-bold">MotionStudio</span>
+                    </div>
+                    <p class="text-[var(--text-secondary)] text-sm">
+                        Creating stunning motion graphics that captivate audiences and elevate brands worldwide. Professional visual solutions for modern businesses.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Home</a></li>
+                        <li><a href="work.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Work</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Services</a></li>
+                        <li><a href="about.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">About</a></li>
+                        <li><a href="contact.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">2D Animation</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">3D Motion Graphics</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Logo Animation</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Video Production</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                        </a>
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+                        </a>
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                        </a>
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.057-1.274-.07-1.649-.07-4.844 0-3.196.016-3.586.074-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[var(--text-secondary)]/20 pt-8 text-center text-sm text-[var(--text-secondary)]">
+                <p>&copy; 2024 MotionStudio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+</body>
+</html>
+

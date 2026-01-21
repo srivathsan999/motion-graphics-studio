@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Motion Graphics Studio</title>
+    <meta name="description" content="Comprehensive motion graphics services for your business.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-surface)] border-b border-[var(--text-secondary)]/20 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span class="text-xl font-bold">MotionStudio</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-1 hover:text-[var(--accent)] transition-smooth">
+                            <span>Home</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-[var(--bg-card)] border border-[var(--text-secondary)]/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="index.html" class="block px-4 py-2 hover:bg-[var(--bg-surface)]">Home 1 - Creative</a>
+                            <a href="home-saas.html" class="block px-4 py-2 hover:bg-[var(--bg-surface)]">Home 2 - SaaS</a>
+                        </div>
+                    </div>
+                    <a href="work.html" class="hover:text-[var(--accent)] transition-smooth">Work</a>
+                    <a href="services.html" class="hover:text-[var(--accent)] transition-smooth">Services</a>
+                    <a href="clients.html" class="hover:text-[var(--accent)] transition-smooth">Clients</a>
+                    <a href="about.html" class="hover:text-[var(--accent)] transition-smooth">About</a>
+                    <a href="contact.html" class="hover:text-[var(--accent)] transition-smooth">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-[var(--bg-card)] transition-smooth" aria-label="Toggle theme">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </button>
+                    <a href="login.html" class="btn-hover px-4 py-2 border border-[var(--accent)] text-[var(--accent)] rounded-lg font-medium hover:bg-[var(--accent)] hover:text-white transition-smooth">Login</a>
+                    <a href="register.html" class="btn-hover px-4 py-2 bg-[var(--accent)] text-white rounded-lg font-medium">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p class="text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">
+                Comprehensive motion graphics solutions tailored to elevate your brand and engage your audience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section-padding px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="w-16 h-16 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">2D Animation</h2>
+                        <p class="text-[var(--text-secondary)] mb-4">
+                            Our 2D animation services bring your concepts to life with fluid motion and engaging storytelling. We specialize in creating custom animations that capture attention and communicate your message effectively.
+                        </p>
+                        <p class="text-[var(--text-secondary)] mb-6">
+                            From character animations to infographic motion graphics, we deliver polished results that work across all digital platforms. Our team uses industry-standard tools and techniques to ensure smooth, professional animations that enhance your brand's visual identity.
+                        </p>
+                        <ul class="space-y-2 text-[var(--text-secondary)]">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Character animation and rigging
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Infographic and data visualization
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Explainer video production
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="https://picsum.photos/600/400?random=60" alt="2D Animation" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <img src="https://picsum.photos/600/400?random=61" alt="3D Motion Graphics" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg order-2 md:order-1">
+                    <div class="order-1 md:order-2">
+                        <div class="w-16 h-16 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">3D Motion Graphics</h2>
+                        <p class="text-[var(--text-secondary)] mb-4">
+                            Create depth and dimension with our 3D motion graphics services. We produce stunning visualizations that add a premium feel to your brand communications and marketing materials.
+                        </p>
+                        <p class="text-[var(--text-secondary)] mb-6">
+                            Our 3D capabilities include product visualization, architectural walkthroughs, abstract motion graphics, and complex scene animations. We work with cutting-edge software to deliver photorealistic or stylized 3D content that stands out.
+                        </p>
+                        <ul class="space-y-2 text-[var(--text-secondary)]">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Product visualization and rendering
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Abstract and geometric animations
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Environmental and scene creation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="w-16 h-16 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">Logo Animation</h2>
+                        <p class="text-[var(--text-secondary)] mb-4">
+                            Make your brand memorable with professional logo animations. We create stunning reveals that establish strong first impressions and reinforce brand identity across all touchpoints.
+                        </p>
+                        <p class="text-[var(--text-secondary)] mb-6">
+                            Our logo animations are designed to work seamlessly in various contexts - from website headers to video intros, social media content to presentation slides. We deliver multiple versions optimized for different durations and platforms.
+                        </p>
+                        <ul class="space-y-2 text-[var(--text-secondary)]">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Multiple duration variations
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Platform-optimized formats
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Brand guideline compliance
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="https://picsum.photos/600/400?random=62" alt="Logo Animation" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <img src="https://picsum.photos/600/400?random=63" alt="UI/UX Animation" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg order-2 md:order-1">
+                    <div class="order-1 md:order-2">
+                        <div class="w-16 h-16 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">UI/UX Animation</h2>
+                        <p class="text-[var(--text-secondary)] mb-4">
+                            Enhance user experience with smooth interface animations that guide interactions and provide visual feedback. Our UI/UX animations improve usability while adding polish to your digital products.
+                        </p>
+                        <p class="text-[var(--text-secondary)] mb-6">
+                            We create micro-interactions, transitions, loading states, and navigation animations that feel natural and intuitive. Our animations are optimized for performance and accessibility, ensuring they enhance rather than hinder the user experience.
+                        </p>
+                        <ul class="space-y-2 text-[var(--text-secondary)]">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Micro-interactions and transitions
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Loading and feedback animations
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Performance-optimized code
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="w-16 h-16 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">Video Production</h2>
+                        <p class="text-[var(--text-secondary)] mb-4">
+                            End-to-end video production services that combine motion graphics with live action for complete storytelling. From concept to final delivery, we handle every aspect of your video project.
+                        </p>
+                        <p class="text-[var(--text-secondary)] mb-6">
+                            Our video production services include pre-production planning, filming, motion graphics integration, editing, color grading, and sound design. We deliver broadcast-quality content optimized for your target platforms.
+                        </p>
+                        <ul class="space-y-2 text-[var(--text-secondary)]">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Pre-production and planning
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Motion graphics integration
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Post-production and delivery
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="https://picsum.photos/600/400?random=64" alt="Video Production" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <img src="https://picsum.photos/600/400?random=65" alt="Typography Animation" width="600" height="400" loading="lazy" class="w-full h-auto rounded-lg order-2 md:order-1">
+                    <div class="order-1 md:order-2">
+                        <div class="w-16 h-16 bg-[var(--accent)]/20 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4">Typography Animation</h2>
+                        <p class="text-[var(--text-secondary)] mb-4">
+                            Dynamic text animations that emphasize key messages and create visual hierarchy in your content. We transform static typography into engaging motion graphics that capture attention.
+                        </p>
+                        <p class="text-[var(--text-secondary)] mb-6">
+                            Our typography animations range from subtle text reveals to complex kinetic typography sequences. We work with custom fonts and brand typography to create animations that reinforce your messaging and brand identity.
+                        </p>
+                        <ul class="space-y-2 text-[var(--text-secondary)]">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Kinetic typography sequences
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Text reveals and transitions
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-[var(--accent)] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Custom font integration
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding px-4 sm:px-6 lg:px-8 bg-[var(--bg-surface)] fade-in">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-xl text-[var(--text-secondary)] mb-8">
+                Let's discuss how our motion graphics services can elevate your brand.
+            </p>
+            <a href="contact.html" class="btn-hover inline-block px-8 py-4 bg-[var(--accent)] text-white rounded-lg font-semibold text-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--bg-surface)] border-t border-[var(--text-secondary)]/20 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-xl font-bold">MotionStudio</span>
+                    </div>
+                    <p class="text-[var(--text-secondary)] text-sm">
+                        Creating stunning motion graphics that captivate audiences and elevate brands worldwide. Professional visual solutions for modern businesses.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Home</a></li>
+                        <li><a href="work.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Work</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Services</a></li>
+                        <li><a href="about.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">About</a></li>
+                        <li><a href="contact.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">2D Animation</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">3D Motion Graphics</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Logo Animation</a></li>
+                        <li><a href="services.html" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth">Video Production</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                        </a>
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+                        </a>
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                        </a>
+                        <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-smooth" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.057-1.274-.07-1.649-.07-4.844 0-3.196.016-3.586.074-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[var(--text-secondary)]/20 pt-8 text-center text-sm text-[var(--text-secondary)]">
+                <p>&copy; 2024 MotionStudio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+</body>
+</html>
+
