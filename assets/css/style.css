@@ -8,6 +8,7 @@
   --text-primary: #F8FAFC;
   --text-secondary: #CBD5E1;
   --accent: #3B82F6;
+  --map-filter: grayscale(1) invert(1) contrast(0.8) brightness(0.8);
 }
 
 [data-theme="light"] {
@@ -17,6 +18,7 @@
   --text-primary: #0F172A;
   --text-secondary: #475569;
   --accent: #3B82F6;
+  --map-filter: grayscale(1);
 }
 
 /* Base Styles */
@@ -82,3 +84,9 @@ img {
   outline-offset: 2px;
 }
 
+
+/* Active Mobile/Desktop Navigation Link */
+.nav-active {
+  color: var(--accent) !important;
+  font-weight: 600;
+}

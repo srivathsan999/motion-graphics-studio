@@ -138,3 +138,51 @@
   window.toggleMobileHomeDropdown = toggleMobileHomeDropdown;
 })();
 
+// Active Menu State Functionality
+(function() {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get current page filename (handle root path as index.html)
+    const path = window.location.pathname;
+    const page = path.split('/').pop() || 'index.html';
+    
+    // Select all links in the navbar (both desktop and mobile)
+    const links = document.querySelectorAll('nav a');
+    
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      // Skip empty links or hash links
+      if (!href || href === '#' || href.startsWith('javascript:')) return;
+      
+      // Get link filename
+      const linkPage = href.split('/').pop();
+      
+      // Check if it matches current page
+      if (linkPage === page) {
+        link.classList.add('nav-active');
+        
+        // Handle Desktop Dropdown Parent (Parent "Home" link when child is active)
+        const desktopParentGroup = link.closest('.group');
+        if (desktopParentGroup) {
+          // The first anchor in the group is usually the parent trigger
+          const parentLink = desktopParentGroup.querySelector('a');
+          if (parentLink && parentLink !== link) {
+            parentLink.classList.add('nav-active');
+          }
+        }
+        
+        // Handle Mobile Dropdown Parent (Parent "Home" button when child is active)
+        const mobileDropdown = link.closest('#mobile-home-dropdown');
+        if (mobileDropdown) {
+             // The button is the previous element sibling of the dropdown div
+             const parentButton = mobileDropdown.previousElementSibling;
+             if (parentButton && parentButton.tagName === 'BUTTON') {
+                 parentButton.classList.add('nav-active');
+             }
+        }
+      }
+    });
+  });
+})();
+
