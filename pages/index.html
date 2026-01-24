@@ -18,7 +18,7 @@
         class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-surface)] border-b border-[var(--text-secondary)]/20 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition-smooth">
                     <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
@@ -27,7 +27,7 @@
                             d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     <span class="text-xl font-bold">MotionStudio</span>
-                </div>
+                </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
@@ -140,10 +140,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 fade-in">
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 fade-in relative"
+        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('../assets/images/hero_creative_bg_v2.png'); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">Bringing Stories to Life Through Motion</h1>
-            <p class="text-xl md:text-2xl text-[var(--text-secondary)] mb-8 max-w-3xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Bringing Stories to Life Through Motion</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
                 We create stunning motion graphics that captivate audiences and elevate your brand's visual identity.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -342,23 +343,25 @@
             <p class="text-center text-[var(--text-secondary)] mb-12 max-w-2xl mx-auto">
                 We've had the privilege of working with some of the world's most innovative brands.
             </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
-                <img src="https://picsum.photos/200/100?random=10" alt="Client Logo 1" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=11" alt="Client Logo 2" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=12" alt="Client Logo 3" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=13" alt="Client Logo 4" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=14" alt="Client Logo 5" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=15" alt="Client Logo 6" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=16" alt="Client Logo 7" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
-                <img src="https://picsum.photos/200/100?random=17" alt="Client Logo 8" width="200" height="100"
-                    loading="lazy" class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-smooth">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-60">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
+                    width="200" height="100" loading="lazy"
+                    class="w-full h-12 object-contain grayscale hover:grayscale-0 transition-smooth">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix"
+                    width="200" height="100" loading="lazy"
+                    class="w-full h-12 object-contain grayscale hover:grayscale-0 transition-smooth">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify"
+                    width="200" height="100" loading="lazy"
+                    class="w-full h-12 object-contain grayscale hover:grayscale-0 transition-smooth">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" width="200"
+                    height="100" loading="lazy"
+                    class="w-full h-12 object-contain grayscale hover:grayscale-0 transition-smooth">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Adobe_Systems_logo_and_wordmark.svg"
+                    alt="Adobe" width="200" height="100" loading="lazy"
+                    class="w-full h-12 object-contain grayscale hover:grayscale-0 transition-smooth">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb"
+                    width="200" height="100" loading="lazy"
+                    class="w-full h-12 object-contain grayscale hover:grayscale-0 transition-smooth">
             </div>
         </div>
     </section>
