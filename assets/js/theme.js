@@ -1,5 +1,5 @@
 // Theme Toggle Functionality
-(function() {
+(function () {
   'use strict';
 
   // Get theme from localStorage or default to dark
@@ -59,17 +59,17 @@
 })();
 
 // Mobile Menu Toggle Functionality
-(function() {
+(function () {
   'use strict';
 
   const toggleMobileMenu = () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.getElementById('menu-icon');
     const closeIcon = document.getElementById('close-icon');
-    
+
     if (mobileMenu && menuIcon && closeIcon) {
       const isHidden = mobileMenu.classList.contains('hidden');
-      
+
       if (isHidden) {
         mobileMenu.classList.remove('hidden');
         menuIcon.classList.add('hidden');
@@ -86,7 +86,7 @@
   document.addEventListener('click', (e) => {
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuButton = document.getElementById('mobile-menu-button');
-    
+
     if (mobileMenu && mobileMenuButton && !mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
       if (!mobileMenu.classList.contains('hidden')) {
         toggleMobileMenu();
@@ -114,16 +114,16 @@
 })();
 
 // Mobile Home Dropdown Toggle Functionality
-(function() {
+(function () {
   'use strict';
 
   const toggleMobileHomeDropdown = () => {
     const dropdown = document.getElementById('mobile-home-dropdown');
     const arrow = document.getElementById('mobile-home-arrow');
-    
+
     if (dropdown && arrow) {
       const isHidden = dropdown.classList.contains('hidden');
-      
+
       if (isHidden) {
         dropdown.classList.remove('hidden');
         arrow.classList.add('rotate-180');
@@ -139,29 +139,29 @@
 })();
 
 // Active Menu State Functionality
-(function() {
+(function () {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', () => {
     // Get current page filename (handle root path as index.html)
     const path = window.location.pathname;
     const page = path.split('/').pop() || 'index.html';
-    
+
     // Select all links in the navbar (both desktop and mobile)
     const links = document.querySelectorAll('nav a');
-    
+
     links.forEach(link => {
       const href = link.getAttribute('href');
       // Skip empty links or hash links
       if (!href || href === '#' || href.startsWith('javascript:')) return;
-      
+
       // Get link filename
       const linkPage = href.split('/').pop();
-      
+
       // Check if it matches current page
       if (linkPage === page) {
         link.classList.add('nav-active');
-        
+
         // Handle Desktop Dropdown Parent (Parent "Home" link when child is active)
         const desktopParentGroup = link.closest('.group');
         if (desktopParentGroup) {
@@ -171,16 +171,54 @@
             parentLink.classList.add('nav-active');
           }
         }
-        
+
         // Handle Mobile Dropdown Parent (Parent "Home" button when child is active)
         const mobileDropdown = link.closest('#mobile-home-dropdown');
         if (mobileDropdown) {
-             // The button is the previous element sibling of the dropdown div
-             const parentButton = mobileDropdown.previousElementSibling;
-             if (parentButton && parentButton.tagName === 'BUTTON') {
-                 parentButton.classList.add('nav-active');
-             }
+          // The button is the previous element sibling of the dropdown div
+          const parentButton = mobileDropdown.previousElementSibling;
+          if (parentButton && parentButton.tagName === 'BUTTON') {
+            parentButton.classList.add('nav-active');
+          }
         }
+      }
+    });
+  });
+})();
+
+// FAQ Accordion Functionality
+(function () {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      const content = item.querySelector('.faq-content');
+      const iconWrapper = item.querySelector('.faq-icon-wrapper');
+
+      if (trigger && content && iconWrapper) {
+        trigger.addEventListener('click', () => {
+          const isClosed = content.style.maxHeight === '0px' || content.style.maxHeight === '';
+
+          // Close all other items
+          faqItems.forEach(otherItem => {
+            const otherContent = otherItem.querySelector('.faq-content');
+            const otherIcon = otherItem.querySelector('.faq-icon-wrapper');
+            if (otherContent) otherContent.style.maxHeight = '0px';
+            if (otherIcon) otherIcon.classList.remove('rotate-180');
+          });
+
+          // Toggle current item
+          if (isClosed) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            iconWrapper.classList.add('rotate-180');
+          } else {
+            content.style.maxHeight = '0px';
+            iconWrapper.classList.remove('rotate-180');
+          }
+        });
       }
     });
   });

@@ -17,7 +17,7 @@
         class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-surface)] border-b border-[var(--text-secondary)]/20 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition-smooth">
+                <a href="../index.html" class="flex items-center space-x-2 hover:opacity-80 transition-smooth">
                     <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
@@ -166,35 +166,40 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">Why Partner With Us</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-left">
-                    <svg class="w-12 h-12 text-[var(--accent)] mb-4" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                    <h3 class="text-xl font-bold mb-2">Fast Turnaround</h3>
-                    <p class="text-[var(--text-secondary)]">We understand the speed of business. Our streamlined
+                <div
+                    class="text-left group card-hover p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--text-secondary)]/5 shadow-sm transition-all duration-300">
+                    <div
+                        class="w-16 h-16 mb-6 bg-white rounded-xl shadow-md p-2 transition-transform duration-300 group-hover:scale-110">
+                        <img src="../assets/images/feature_fast_turnaround.png" alt="Fast Turnaround"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fast Turnaround</h3>
+                    <p class="text-[var(--text-secondary)] leading-relaxed text-sm">We understand the speed of business.
+                        Our streamlined
                         workflow ensures you get high-quality assets in record time.</p>
                 </div>
-                <div class="text-left">
-                    <svg class="w-12 h-12 text-[var(--accent)] mb-4" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <h3 class="text-xl font-bold mb-2">Fixed Pricing</h3>
-                    <p class="text-[var(--text-secondary)]">No surprises. Our transparent pricing packages let you plan
+                <div
+                    class="text-left group card-hover p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--text-secondary)]/5 shadow-sm transition-all duration-300">
+                    <div
+                        class="w-16 h-16 mb-6 bg-white rounded-xl shadow-md p-2 transition-transform duration-300 group-hover:scale-110">
+                        <img src="../assets/images/feature_fixed_pricing.png" alt="Fixed Pricing"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fixed Pricing</h3>
+                    <p class="text-[var(--text-secondary)] leading-relaxed text-sm">No surprises. Our transparent
+                        pricing packages let you plan
                         your budget with confidence.</p>
                 </div>
-                <div class="text-left">
-                    <svg class="w-12 h-12 text-[var(--accent)] mb-4" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                        </path>
-                    </svg>
-                    <h3 class="text-xl font-bold mb-2">Dedicated Team</h3>
-                    <p class="text-[var(--text-secondary)]">You get a dedicated project manager and creative team that
+                <div
+                    class="text-left group card-hover p-6 rounded-2xl bg-[var(--bg-card)] border border-[var(--text-secondary)]/5 shadow-sm transition-all duration-300">
+                    <div
+                        class="w-16 h-16 mb-6 bg-white rounded-xl shadow-md p-2 transition-transform duration-300 group-hover:scale-110">
+                        <img src="../assets/images/feature_dedicated_team.png" alt="Dedicated Team"
+                            class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Dedicated Team</h3>
+                    <p class="text-[var(--text-secondary)] leading-relaxed text-sm">You get a dedicated project manager
+                        and creative team that
                         learns your brand inside and out.</p>
                 </div>
             </div>
@@ -209,50 +214,55 @@
                 A proven workflow that delivers exceptional results every time.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-                <div class="text-center">
+                <div class="text-center group">
                     <div
-                        class="w-16 h-16 bg-[var(--accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-white">1</span>
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-2xl shadow-lg p-2 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-xl">
+                        <img src="../assets/images/process_discovery.png" alt="Discovery"
+                            class="w-full h-full object-cover rounded-xl">
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Discovery</h3>
-                    <p class="text-[var(--text-secondary)] text-sm">We begin by understanding your brand, goals, and
-                        target audience to create a strategic foundation for your project.</p>
+                    <h3 class="text-xl font-semibold mb-2">1. Discovery</h3>
+                    <p class="text-[var(--text-secondary)] text-sm leading-relaxed">We begin by understanding your
+                        brand, goals, and target audience to create a strategic foundation for your project.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center group">
                     <div
-                        class="w-16 h-16 bg-[var(--accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-white">2</span>
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-2xl shadow-lg p-2 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-xl">
+                        <img src="../assets/images/process_concept.png" alt="Concept"
+                            class="w-full h-full object-cover rounded-xl">
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Concept</h3>
-                    <p class="text-[var(--text-secondary)] text-sm">Our creative team develops concepts and storyboards
-                        that align with your vision and business objectives.</p>
+                    <h3 class="text-xl font-semibold mb-2">2. Concept</h3>
+                    <p class="text-[var(--text-secondary)] text-sm leading-relaxed">Our creative team develops concepts
+                        and storyboards that align with your vision and business objectives.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center group">
                     <div
-                        class="w-16 h-16 bg-[var(--accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-white">3</span>
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-2xl shadow-lg p-2 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-xl">
+                        <img src="../assets/images/process_design.png" alt="Design"
+                            class="w-full h-full object-cover rounded-xl">
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Design</h3>
-                    <p class="text-[var(--text-secondary)] text-sm">We create detailed designs and visual assets that
-                        form the building blocks of your motion graphics.</p>
+                    <h3 class="text-xl font-semibold mb-2">3. Design</h3>
+                    <p class="text-[var(--text-secondary)] text-sm leading-relaxed">We create detailed designs and
+                        visual assets that form the building blocks of your motion graphics.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center group">
                     <div
-                        class="w-16 h-16 bg-[var(--accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-white">4</span>
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-2xl shadow-lg p-2 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-xl">
+                        <img src="../assets/images/process_animation.png" alt="Animation"
+                            class="w-full h-full object-cover rounded-xl">
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Animation</h3>
-                    <p class="text-[var(--text-secondary)] text-sm">Our animators bring designs to life with smooth,
-                        professional motion that engages and captivates.</p>
+                    <h3 class="text-xl font-semibold mb-2">4. Animation</h3>
+                    <p class="text-[var(--text-secondary)] text-sm leading-relaxed">Our animators bring designs to life
+                        with smooth, professional motion that engages and captivates.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center group">
                     <div
-                        class="w-16 h-16 bg-[var(--accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-white">5</span>
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-2xl shadow-lg p-2 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-xl">
+                        <img src="../assets/images/process_delivery.png" alt="Delivery"
+                            class="w-full h-full object-cover rounded-xl">
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Delivery</h3>
-                    <p class="text-[var(--text-secondary)] text-sm">Final assets are delivered in all required formats,
-                        optimized for your specific use cases and platforms.</p>
+                    <h3 class="text-xl font-semibold mb-2">5. Delivery</h3>
+                    <p class="text-[var(--text-secondary)] text-sm leading-relaxed">Final assets are delivered in all
+                        required formats, optimized for your specific use cases and platforms.</p>
                 </div>
             </div>
         </div>
@@ -553,30 +563,96 @@
     <section class="section-padding px-4 sm:px-6 lg:px-8 bg-[var(--bg-surface)] fade-in">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-            <div class="space-y-6">
+            <div class="space-y-4">
                 <!-- FAQ Item 1 -->
-                <div class="bg-[var(--bg-card)] rounded-lg p-6 border border-[var(--text-secondary)]/10">
-                    <h3 class="text-xl font-semibold mb-2">How long does a project take?</h3>
-                    <p class="text-[var(--text-secondary)]">Typical turnaround for a standard animation project (30-60
-                        seconds) is 2-3 weeks, depending on complexity and revision rounds.</p>
+                <div
+                    class="faq-item group bg-[var(--bg-card)] rounded-xl border border-[var(--text-secondary)]/10 overflow-hidden transition-all duration-300">
+                    <button
+                        class="faq-trigger w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-semibold pr-8">How long does a project take?</span>
+                        <span
+                            class="faq-icon-wrapper p-1 bg-[var(--accent)]/10 rounded-full transition-transform duration-300">
+                            <svg class="faq-icon w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-5 text-[var(--text-secondary)] leading-relaxed">
+                            Typical turnaround for a standard animation project (30-60 seconds) is 2-3 weeks, depending
+                            on complexity and revision rounds.
+                        </div>
+                    </div>
                 </div>
+
                 <!-- FAQ Item 2 -->
-                <div class="bg-[var(--bg-card)] rounded-lg p-6 border border-[var(--text-secondary)]/10">
-                    <h3 class="text-xl font-semibold mb-2">Do you offer source files?</h3>
-                    <p class="text-[var(--text-secondary)]">Yes, source files (After Effects, Illustrator) are available
-                        as an add-on or included in our Enterprise packages.</p>
+                <div
+                    class="faq-item group bg-[var(--bg-card)] rounded-xl border border-[var(--text-secondary)]/10 overflow-hidden transition-all duration-300">
+                    <button
+                        class="faq-trigger w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-semibold pr-8">Do you offer source files?</span>
+                        <span
+                            class="faq-icon-wrapper p-1 bg-[var(--accent)]/10 rounded-full transition-transform duration-300">
+                            <svg class="faq-icon w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-5 text-[var(--text-secondary)] leading-relaxed">
+                            Yes, source files (After Effects, Illustrator) are available as an add-on or included in our
+                            Enterprise packages.
+                        </div>
+                    </div>
                 </div>
+
                 <!-- FAQ Item 3 -->
-                <div class="bg-[var(--bg-card)] rounded-lg p-6 border border-[var(--text-secondary)]/10">
-                    <h3 class="text-xl font-semibold mb-2">What happens if I don't see a plan that fits?</h3>
-                    <p class="text-[var(--text-secondary)]">No problem! Contact us for a custom quote tailored to your
-                        specific project requirements and budget.</p>
+                <div
+                    class="faq-item group bg-[var(--bg-card)] rounded-xl border border-[var(--text-secondary)]/10 overflow-hidden transition-all duration-300">
+                    <button
+                        class="faq-trigger w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-semibold pr-8">What happens if I don't see a plan that fits?</span>
+                        <span
+                            class="faq-icon-wrapper p-1 bg-[var(--accent)]/10 rounded-full transition-transform duration-300">
+                            <svg class="faq-icon w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-5 text-[var(--text-secondary)] leading-relaxed">
+                            No problem! Contact us for a custom quote tailored to your specific project requirements and
+                            budget.
+                        </div>
+                    </div>
                 </div>
+
                 <!-- FAQ Item 4 -->
-                <div class="bg-[var(--bg-card)] rounded-lg p-6 border border-[var(--text-secondary)]/10">
-                    <h3 class="text-xl font-semibold mb-2">Can you handle rush projects?</h3>
-                    <p class="text-[var(--text-secondary)]">Yes, we can accommodate rush timelines for an additional
-                        fee, subject to team availability.</p>
+                <div
+                    class="faq-item group bg-[var(--bg-card)] rounded-xl border border-[var(--text-secondary)]/10 overflow-hidden transition-all duration-300">
+                    <button
+                        class="faq-trigger w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-semibold pr-8">Can you handle rush projects?</span>
+                        <span
+                            class="faq-icon-wrapper p-1 bg-[var(--accent)]/10 rounded-full transition-transform duration-300">
+                            <svg class="faq-icon w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-5 text-[var(--text-secondary)] leading-relaxed">
+                            Yes, we can accommodate rush timelines for an additional fee, subject to team availability.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -587,7 +663,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <div class="flex items-center space-x-2 mb-4">
+                    <a href="../index.html" class="flex items-center space-x-2 mb-4 hover:opacity-80 transition-smooth">
                         <svg class="w-8 h-8 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
@@ -596,7 +672,7 @@
                                 d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <span class="text-xl font-bold">MotionStudio</span>
-                    </div>
+                    </a>
                     <p class="text-[var(--text-secondary)] text-sm">
                         Creating stunning motion graphics that captivate audiences and elevate brands worldwide.
                         Professional visual solutions for modern businesses.
