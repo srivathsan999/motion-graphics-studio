@@ -140,20 +140,45 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 fade-in relative"
-        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('../assets/images/hero_creative_bg_v2.png'); background-size: cover; background-position: center; background-attachment: fixed;">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Bringing Stories to Life Through Motion</h1>
-            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-                We create stunning motion graphics that captivate audiences and elevate your brand's visual identity.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html"
-                    class="btn-hover px-8 py-4 bg-[var(--accent)] text-white rounded-lg font-semibold text-lg">Get
-                    Started</a>
-                <a href="work.html"
-                    class="btn-hover px-8 py-4 border-2 border-[var(--accent)] text-[var(--accent)] rounded-lg font-semibold text-lg">View
-                    Our Work</a>
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 fade-in relative overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Background Ornaments -->
+        <div class="bg-mesh">
+            <div class="blob-1"></div>
+            <div class="blob-2"></div>
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-[100px] animate-pulse">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="text-center lg:text-left">
+                <div
+                    class="inline-block px-4 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] text-sm font-semibold mb-6 border border-[var(--accent)]/20">
+                    ✨ Award Winning Motion Studio
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Bringing Stories to Life Through <span class="text-gradient">Motion</span>
+                </h1>
+                <p class="text-xl text-[var(--text-secondary)] mb-10 max-w-xl mx-auto lg:mx-0">
+                    We create stunning motion graphics that captivate audiences and elevate your brand's visual identity
+                    with high-end digital craftsmanship.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="contact.html"
+                        class="btn-hover px-8 py-4 bg-[var(--accent)] text-white rounded-lg font-semibold text-lg text-center shadow-lg shadow-[var(--accent)]/25">
+                        Start a Project
+                    </a>
+                    <a href="work.html"
+                        class="btn-hover px-8 py-4 glass-card text-[var(--text-primary)] rounded-lg font-semibold text-lg text-center">
+                        View Showreel
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative mt-12 lg:mt-0">
+                <div class="glass-card p-4 rounded-3xl float-animation shadow-2xl overflow-hidden">
+                    <img src="https://picsum.photos/id/48/800/600" alt="Motion Graphics Design"
+                        class="rounded-2xl w-full h-[300px] md:h-[500px] object-cover shadow-inner">
+                </div>
             </div>
         </div>
     </section>
@@ -169,7 +194,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=1" alt="Project 1" width="800" height="600"
+                    <img src="https://picsum.photos/id/80/800/600" alt="Project 1" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Brand Identity Animation</h3>
@@ -178,7 +203,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=2" alt="Project 2" width="800" height="600"
+                    <img src="https://picsum.photos/id/81/800/600" alt="Project 2" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Product Launch Video</h3>
@@ -187,7 +212,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=3" alt="Project 3" width="800" height="600"
+                    <img src="https://picsum.photos/id/82/800/600" alt="Project 3" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Corporate Presentation</h3>
@@ -196,7 +221,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=4" alt="Project 4" width="800" height="600"
+                    <img src="https://picsum.photos/id/83/800/600" alt="Project 4" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Social Media Campaign</h3>
@@ -205,7 +230,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=5" alt="Project 5" width="800" height="600"
+                    <img src="https://picsum.photos/id/84/800/600" alt="Project 5" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Explainer Video Series</h3>
@@ -214,7 +239,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=6" alt="Project 6" width="800" height="600"
+                    <img src="https://picsum.photos/id/85/800/600" alt="Project 6" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Event Opening Sequence</h3>
@@ -223,7 +248,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=7" alt="Project 7" width="800" height="600"
+                    <img src="https://picsum.photos/id/86/800/600" alt="Project 7" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Documentary Sequence</h3>
@@ -232,7 +257,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=8" alt="Project 8" width="800" height="600"
+                    <img src="https://picsum.photos/id/87/800/600" alt="Project 8" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Mobile App Onboarding</h3>
@@ -258,7 +283,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div
                     class="card-hover bg-[var(--bg-card)] p-8 rounded-lg border border-[var(--text-secondary)]/10 text-center">
-                    <img src="https://picsum.photos/800/600?random=20" alt="2D Animation"
+                    <img src="https://picsum.photos/id/90/800/600" alt="2D Animation"
                         class="w-full h-48 object-cover rounded-lg mb-6 mx-auto">
                     <h3 class="text-2xl font-semibold mb-3">2D Animation</h3>
                     <p class="text-[var(--text-secondary)]">Custom 2D animations that bring your concepts to life with
@@ -266,7 +291,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] p-8 rounded-lg border border-[var(--text-secondary)]/10 text-center">
-                    <img src="https://picsum.photos/800/600?random=21" alt="3D Motion Graphics"
+                    <img src="https://picsum.photos/id/91/800/600" alt="3D Motion Graphics"
                         class="w-full h-48 object-cover rounded-lg mb-6 mx-auto">
                     <h3 class="text-2xl font-semibold mb-3">3D Motion Graphics</h3>
                     <p class="text-[var(--text-secondary)]">Stunning 3D visualizations and animations that create depth
@@ -274,7 +299,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] p-8 rounded-lg border border-[var(--text-secondary)]/10 text-center">
-                    <img src="https://picsum.photos/800/600?random=22" alt="Logo Animation"
+                    <img src="https://picsum.photos/id/92/800/600" alt="Logo Animation"
                         class="w-full h-48 object-cover rounded-lg mb-6 mx-auto">
                     <h3 class="text-2xl font-semibold mb-3">Logo Animation</h3>
                     <p class="text-[var(--text-secondary)]">Professional logo animations that make your brand memorable
@@ -282,7 +307,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] p-8 rounded-lg border border-[var(--text-secondary)]/10 text-center">
-                    <img src="https://picsum.photos/800/600?random=23" alt="UI/UX Animation"
+                    <img src="https://picsum.photos/id/93/800/600" alt="UI/UX Animation"
                         class="w-full h-48 object-cover rounded-lg mb-6 mx-auto">
                     <h3 class="text-2xl font-semibold mb-3">UI/UX Animation</h3>
                     <p class="text-[var(--text-secondary)]">Smooth interface animations that enhance user experience and
@@ -290,7 +315,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] p-8 rounded-lg border border-[var(--text-secondary)]/10 text-center">
-                    <img src="https://picsum.photos/800/600?random=24" alt="Video Production"
+                    <img src="https://picsum.photos/id/94/800/600" alt="Video Production"
                         class="w-full h-48 object-cover rounded-lg mb-6 mx-auto">
                     <h3 class="text-2xl font-semibold mb-3">Video Production</h3>
                     <p class="text-[var(--text-secondary)]">End-to-end video production services combining motion
@@ -298,7 +323,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] p-8 rounded-lg border border-[var(--text-secondary)]/10 text-center">
-                    <img src="https://picsum.photos/800/600?random=25" alt="Typography Animation"
+                    <img src="https://picsum.photos/id/95/800/600" alt="Typography Animation"
                         class="w-full h-48 object-cover rounded-lg mb-6 mx-auto">
                     <h3 class="text-2xl font-semibold mb-3">Typography Animation</h3>
                     <p class="text-[var(--text-secondary)]">Dynamic text animations that emphasize key messages and

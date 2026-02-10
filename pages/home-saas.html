@@ -140,22 +140,62 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 fade-in relative"
-        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../assets/images/hero_saas_bg_v2.png'); background-size: cover; background-position: center; background-attachment: fixed;">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Streamlined Motion Graphics Workflow</h1>
-                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-                    Transform your digital presence with professional motion graphics designed for modern businesses.
-                    Fast, efficient, and results-driven.
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 fade-in relative overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Background Ornaments -->
+        <div class="bg-mesh">
+            <div class="blob-1"></div>
+            <div class="blob-2"></div>
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-[100px] animate-pulse">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="text-center lg:text-left">
+                <div
+                    class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] text-xs font-semibold mb-8 border border-[var(--accent)]/20 hover:bg-[var(--accent)]/20 transition-smooth cursor-default">
+                    <span class="flex h-2 w-2 rounded-full bg-[var(--accent)] animate-pulse"></span>
+                    <span>v2.0 - New Collaboration Tools Now Live</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
+                    Scale Your Motion Production <span class="text-gradient">With Confidence</span>
+                </h1>
+
+                <p class="text-xl text-[var(--text-secondary)] mb-10 max-w-xl mx-auto lg:mx-0">
+                    The all-in-one studio partner for modern brands. Streamlined workflows, fixed pricing, and
+                    world-class motion graphics.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start">
                     <a href="contact.html"
-                        class="btn-hover px-8 py-4 bg-[var(--accent)] text-white rounded-lg font-semibold text-lg">Get
-                        Started</a>
+                        class="btn-hover px-8 py-4 bg-[var(--accent)] text-white rounded-lg font-semibold text-lg text-center shadow-lg shadow-[var(--accent)]/25">
+                        Get Started Free
+                    </a>
                     <a href="#process"
-                        class="btn-hover px-8 py-4 border-2 border-[var(--accent)] text-[var(--accent)] rounded-lg font-semibold text-lg">Learn
-                        More</a>
+                        class="btn-hover px-8 py-4 glass-card text-[var(--text-primary)] rounded-lg font-semibold text-lg text-center">
+                        Book a Demo
+                    </a>
+                </div>
+
+                <!-- Trusted By Minimal Bar Integrated -->
+                <div class="opacity-50">
+                    <p class="text-xs font-bold uppercase tracking-[0.2em] mb-6">Trusted by teams at</p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6">
+                        <span class="text-sm font-bold opacity-60">GOOGLE</span>
+                        <span class="text-sm font-bold opacity-60">ADOBE</span>
+                        <span class="text-sm font-bold opacity-60">STRIPE</span>
+                        <span class="text-sm font-bold opacity-60">UBER</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative mt-12 lg:mt-0">
+                <div class="glass-card p-2 rounded-3xl float-animation shadow-2xl overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-[var(--accent)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    </div>
+                    <img src="https://picsum.photos/id/180/1200/800" alt="SaaS Dashboard Preview"
+                        class="rounded-2xl w-full h-[300px] md:h-[500px] object-cover shadow-inner grayscale-[20%] group-hover:grayscale-0 transition-all duration-700">
                 </div>
             </div>
         </div>
@@ -278,7 +318,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=20" alt="Case Study 1" width="800" height="600"
+                    <img src="https://picsum.photos/id/70/800/600" alt="Case Study 1" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="text-sm text-[var(--accent)] mb-2">SaaS Platform</div>
@@ -293,7 +333,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=21" alt="Case Study 2" width="800" height="600"
+                    <img src="https://picsum.photos/id/71/800/600" alt="Case Study 2" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="text-sm text-[var(--accent)] mb-2">E-commerce</div>
@@ -308,7 +348,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=22" alt="Case Study 3" width="800" height="600"
+                    <img src="https://picsum.photos/id/72/800/600" alt="Case Study 3" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="text-sm text-[var(--accent)] mb-2">FinTech</div>
@@ -323,7 +363,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=23" alt="Case Study 4" width="800" height="600"
+                    <img src="https://picsum.photos/id/73/800/600" alt="Case Study 4" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="text-sm text-[var(--accent)] mb-2">Healthcare</div>
@@ -338,7 +378,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=24" alt="Case Study 5" width="800" height="600"
+                    <img src="https://picsum.photos/id/74/800/600" alt="Case Study 5" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="text-sm text-[var(--accent)] mb-2">Technology</div>
@@ -353,7 +393,7 @@
                 </div>
                 <div
                     class="card-hover bg-[var(--bg-card)] rounded-lg overflow-hidden border border-[var(--text-secondary)]/10">
-                    <img src="https://picsum.photos/800/600?random=25" alt="Case Study 6" width="800" height="600"
+                    <img src="https://picsum.photos/id/75/800/600" alt="Case Study 6" width="800" height="600"
                         loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="text-sm text-[var(--accent)] mb-2">Education</div>
